@@ -7,11 +7,25 @@
 brooks:
   email: brooks@gmail.com
   address: "111 Oxford Ave."
-  unit: "2b"
+  unit: two_b
   name: "Brooks Ashmore"
-  city: "Kenilworth"
-  postal_code: "60043"
+  city: "Chicago"
+  postal_code: "60642"
+  organisation: west_chestnut
   main_address?: true
+
+owen:
+  email: owen@gmail.com
+  address: "111 Oxford Ave."
+  unit: one_e
+  name: "Owen Roth"
+  city: "Chicago"
+  postal_code: "60642"
+  organisation: west_chestnut
+  main_address?: true
+
 
 basic_user:
   email: example@test.com
+  organisation: west_chestnut
+  unit: one_e

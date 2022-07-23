@@ -7,7 +7,7 @@
     <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
       <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
         <form class="space-y-6" action="#" method="POST">
-          <%= simple_form_for resource, as: resource_name, method: :post, url: session_path(resource_name), class: "space-y-6" do |f| %>
+          <%= simple_form_for resource, as: resource_name, method: :post, url: create_session_path(resource_name), class: "space-y-6" do |f| %>
             <%= render "devise/shared/error_messages", resource: resource %>
             <%= f.input :email, label: "Email Address", label_html: {class: "block text-sm font-medium text-gray-700"}, input_html: {class: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"}, autocomplete: "email"%>
             <%= f.input :password, label: "Password", label_html: {class: "block text-sm font-medium text-gray-700"}, input_html: {class: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"}, autocomplete: "new-password"%>
@@ -22,7 +22,7 @@
               <span class="px-2 bg-white text-gray-500">Don't have an account?</span>
             </div>
             <div class="relative flex justify-center text-sm">
-              <%= link_to "Sign Up", new_registration_path(resource_name), class: "font-medium text-indigo-600 hover:text-indigo-500" %>
+              <%= link_to "Sign Up", new_signup_path(resource_name), class: "font-medium text-indigo-600 hover:text-indigo-500" %>
             </div>
             <div class="relative flex justify-center text-sm">
               <%= link_to "Forgot Password?", new_password_path(resource_name), class: "font-medium text-indigo-600 hover:text-indigo-500" %>

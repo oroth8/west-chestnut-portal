@@ -4,7 +4,7 @@ require 'test_helper'
 
 class OrganisationsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @organisation = organisations(:one)
+    @organisation = organisations(:west_chestnut)
   end
 
   test 'should get index' do
@@ -20,8 +20,7 @@ class OrganisationsControllerTest < ActionDispatch::IntegrationTest
   test 'should create organisation' do
     assert_difference('Organisation.count') do
       post organisations_url,
-           params: { organisation: { capacity: @organisation.capacity, name: @organisation.name,
-                                     user_id: @organisation.user_id } }
+           params: { organisation: { capacity: @organisation.capacity, name: @organisation.name } }
     end
 
     assert_redirected_to organisation_url(Organisation.last)
@@ -39,8 +38,7 @@ class OrganisationsControllerTest < ActionDispatch::IntegrationTest
 
   test 'should update organisation' do
     patch organisation_url(@organisation),
-          params: { organisation: { capacity: @organisation.capacity, name: @organisation.name,
-                                    user_id: @organisation.user_id } }
+          params: { organisation: { capacity: @organisation.capacity, name: @organisation.name } }
     assert_redirected_to organisation_url(@organisation)
   end
 

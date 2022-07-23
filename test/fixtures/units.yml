@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  number: MyString
-  organisation: one
+one_e:
+  name: "Owen's Unit"
+  number: "1E"
+  organisation: west_chestnut
 
-two:
-  name: MyString
-  number: MyString
-  organisation: two
+two_b:
+  name: "Brook's Unit"
+  number: "2B"
+  organisation: west_chestnut

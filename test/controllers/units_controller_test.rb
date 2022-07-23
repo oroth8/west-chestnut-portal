@@ -4,7 +4,8 @@ require 'test_helper'
 
 class UnitsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @unit = units(:one)
+    @unit = units(:one_e)
+    @org = organisations(:west_chestnut)
   end
 
   test 'should get index' do

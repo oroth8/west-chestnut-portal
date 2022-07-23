@@ -18,7 +18,9 @@ class UnitsController < ApplicationController
   end
 
   # GET /units/1/edit
-  def edit; end
+  def edit
+    @orgs = Organisation.all.pluck(:id)
+  end
 
   # POST /units or /units.json
   def create
